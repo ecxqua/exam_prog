@@ -2,3 +2,5 @@
 `Booking.py` - реализованные классы
 
 `main.py` - исполняемый файл с примером
+
+![Описание](https://i.pinimg.com/236x/34/e4/d5/34e4d5f67b2e0cbda571854d57cabf4a.jpg)

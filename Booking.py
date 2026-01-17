@@ -281,7 +281,7 @@ class BookingProcessor:
     """
 
     def __init__(self):
-        self._history = []  # stack of (command, session_id, seat_id, user)
+        self._history = []  
 
     def execute_command(self, command: BookingCommand, session: EventSession, seat_id: str, user: User) -> bool:
         success = command.execute(session, seat_id, user)
@@ -300,3 +300,4 @@ class BookingProcessor:
         command, session_id, seat_id, user = self._history.pop()
         success = command.undo(None, seat_id, user)
         return success
+
